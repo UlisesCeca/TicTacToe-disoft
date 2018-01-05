@@ -1,0 +1,18 @@
+<div id="div1">
+	<label for="text-input">Sala de Espera</label><br/><br/>
+	
+	<table id="table" Email data-bind="ojComponent: {component: 'ojTable', data: usuariosesperando, columnsDefault: {sortable: 'none'}, columns:
+       [{headerText: 'Usuario', field: 'Usuario'},
+	   {headerText: 'Juego', field: 'Juego'}]}">
+		</table>
+	<br/><br/>
+	
+  
+	<button id= "button"
+				data-bind="click: volver, 
+						ojComponent: { component: 'ojButton', label: 'Volver' }">
+    </button>
+  <br/><br/>
+		
+  
+</div>

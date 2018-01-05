@@ -1,0 +1,30 @@
+<div id="div1">
+  <label for="text-input">User</label>
+  <input id="text-input" 
+         type="text"
+         data-bind="ojComponent: {component: 'ojInputText', 
+									value: nombreDeUsuario}"/>
+									
+  <label for="password">Password</label>								
+  <input type="password" 
+         id="password"
+         data-bind="ojComponent: {component: 'ojInputPassword', 
+                                  value: pwd}"/>	
+    <button id= "button"
+            data-bind="click: entrar, 
+                       ojComponent: { component: 'ojButton', label: 'Entrar' }">
+    </button>
+	<br/>
+	<button id= "button"
+            data-bind="click: registro, 
+                       ojComponent: { component: 'ojButton', label: 'Regístrate' }">
+    </button>
+  <br/>
+  
+  <button id= "button"
+            data-bind="click: recuperarpassword, 
+                       ojComponent: { component: 'ojButton', label: 'Recuperar Password' }">
+    </button>
+  <br/>
+  
+</div>

@@ -1,0 +1,31 @@
+<div id="div1">
+  <label for="text-input">Email</label>
+  <input id="text-input" 
+         type="text"
+         data-bind="ojComponent: {component: 'ojInputText', 
+									value: email}"/>
+									
+  <label for="password">Password</label>								
+  <input type="password" 
+         id="password"
+         data-bind="ojComponent: {component: 'ojInputPassword', 
+                                  value: pwd1}"/>
+
+<label for="password">Confirme Password</label>								
+  <input type="password" 
+         id="password"
+         data-bind="ojComponent: {component: 'ojInputPassword', 
+                                  value: pwd2}"/>								  
+    <button id= "button"
+            data-bind="click: registrar, 
+                       ojComponent: { component: 'ojButton', label: 'Registrar' }">
+    </button>
+  <br/>
+  
+  <button id= "button"
+            data-bind="click: cancelar, 
+                       ojComponent: { component: 'ojButton', label: 'Cancelar' }">
+    </button>
+  <br/><br/>
+  
+</div>

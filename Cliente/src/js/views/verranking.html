@@ -1,0 +1,39 @@
+<div id="div1">
+	<label for="text-input">Ranking</label><br/><br/>
+	
+	<select id="select" data-bind="ojComponent: {component: 'ojSelect',
+                                               optionChange: optionChangedHandler, 
+                                               rootAttributes: {style:'max-width:20em'}}">
+    <option value="TresEnRaya">Tres En Raya</option>
+    <option value="HundirFlota">Hundir Flota</option>
+	</select>
+	<br/><br/>
+	<select id="select" data-bind="ojComponent: {component: 'ojSelect',
+                                               optionChange: optionChangedHandler2, 
+                                               rootAttributes: {style:'max-width:20em'}}">
+    <option value="victorias">Victorias</option>
+    <option value="derrotas">Derrotas</option>
+    <option value="partidas">Partidas</option>
+	</select>
+	<br/><br/>
+	
+	 <label for="changelog">Tu posicion es: </label>
+	<span id="changelog" style="color:blue" data-bind="text: logMsg"></span>
+	<br/><br/>
+	
+	<table id="table" summary="Ranking" data-bind="ojComponent: {component: 'ojTable', data: ranking, columnsDefault: {sortable: 'none'}, columns:
+       [{headerText: 'Posicion', field: 'Posicion'},
+       {headerText: 'Usuario', field: 'Usuario'},
+       {headerText: 'Cantidad', field: 'Cantidad'}]}">
+		</table>
+	<br/><br/>
+	
+  
+	<button id= "button"
+				data-bind="click: volver, 
+						ojComponent: { component: 'ojButton', label: 'Volver' }">
+    </button>
+  <br/><br/>
+		
+  
+</div>

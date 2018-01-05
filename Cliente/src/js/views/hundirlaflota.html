@@ -1,0 +1,105 @@
+<div id="div1">
+	<label for="text-input">Hundir la Flota</label><br/><br/>
+	
+	 <label for="changelog">Jugador 1: </label>
+	<span id="changelog" style="color:blue" data-bind="text: jugador1bind"></span>
+	<br/><br/>
+	
+	<label for="changelog">Jugador 2: </label>
+	<span id="changelog" style="color:blue" data-bind="text: jugador2bind"></span>
+	<br/><br/>
+	
+	<label for="changelog">Turno: </label>
+	<span id="changelog" style="color:blue" data-bind="text: turnobind"></span>
+	<br/><br/>
+	
+	<label for="changelog">Tu tablero: </label>
+	<br/><br/>
+	<label for="changelog">O: Barco en buen estado</label>
+	<br/><label for="changelog">X: Barco derribado</label>
+	<br/><label for="changelog">Barcos restantes: </label>
+	<span id="changelog" style="color:blue" data-bind="text: misbarcosrestantesbind"></span>
+	
+	<br/><br/>
+	<div id="datagrid"
+	 style="width:100%;max-width:278%;height:198px"
+	 data-bind="ojComponent: {component:'ojDataGrid',data: mitablero}">
+	 </div>
+  <br/><br/>
+  
+  <label for="changelog">Tablero enemigo: </label>
+	<br/><br/>
+	<label for="changelog">X: Disparo fallido</label>
+	<br/><label for="changelog">O: Barco derribado</label>
+	<br/><label for="changelog">Barcos restantes: </label>
+	<span id="changelog" style="color:blue" data-bind="text: barcosrestantesenemigobind"></span>
+	<br/><br/>
+	<div id="datagrid"
+	 style="width:100%;max-width:278%;height:198px"
+	 data-bind="ojComponent: {component:'ojDataGrid',data: tableroenemigo}">
+	 </div>
+  <br/><br/>
+  
+	
+	<label for="changelog">Seleccione casilla para disparar: </label>
+  <br/><br/>
+  
+  <button id= "button"
+				data-bind="click: cerocero, 
+						ojComponent: { component: 'ojButton', label: '00 - ' }">
+    </button>
+  
+  <button id= "button"
+				data-bind="click: cerouno, 
+						ojComponent: { component: 'ojButton', label: '01 - ' }">
+    </button>
+  
+  <button id= "button"
+				data-bind="click: cerodos, 
+						ojComponent: { component: 'ojButton', label: '02' }">
+    </button>
+  <br/><br/>
+  
+  <button id= "button"
+				data-bind="click: unocero, 
+						ojComponent: { component: 'ojButton', label: '10 - ' }">
+    </button>
+  
+  <button id= "button"
+				data-bind="click: unouno, 
+						ojComponent: { component: 'ojButton', label: '11 - ' }">
+    </button>
+  
+  <button id= "button"
+				data-bind="click: unodos, 
+						ojComponent: { component: 'ojButton', label: '12' }">
+    </button>
+  <br/><br/>
+  
+  <button id= "button"
+				data-bind="click: doscero, 
+						ojComponent: { component: 'ojButton', label: '20 - ' }">
+    </button>
+  
+  <button id= "button"
+				data-bind="click: dosuno, 
+						ojComponent: { component: 'ojButton', label: '21 - ' }">
+    </button>
+  
+  <button id= "button"
+				data-bind="click: dosdos, 
+						ojComponent: { component: 'ojButton', label: '22' }">
+    </button>
+  <br/><br/>
+  
+  
+	<button id= "button"
+				data-bind="click: salir, 
+						ojComponent: { component: 'ojButton', label: 'Salir' }">
+    </button>
+  <br/><br/>
+  
+  
+		
+  
+</div>
